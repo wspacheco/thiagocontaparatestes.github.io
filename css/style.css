@@ -1,0 +1,73 @@
+* {                   /* Regra de resete. Ao aplicar essa regra, ela valerá para todo o resto. "* {}" */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: rgb(54,77,204);
+    background: linear-gradient(176deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%);
+}
+
+.profile {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.social {
+    display: flex;                      /* faz com que os elementos fiquem lado a lado */
+    justify-content: space-around;      /* só funciona quando se tem a propriedade "flex" */
+    list-style: none;                   /* remove aquelas bolinhas da lista */
+    margin: 20px 0;
+}
+
+.social img {       /* esta classe acessa expecificamente todas as imagens dentro da lista */
+    width: 33px;
+}
+
+.link-list {
+    list-style: none;
+}
+
+.link-list li {
+    margin: 10px 20px;
+}
+
+.link-list li a {     /* link-list/li/a caminho para acessar aquele conteúdo. O que será estilizado é o "a" */
+    display: block;   /* faz com que o texto se comporte em bloco e não em linha */
+    background: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none; /* serve tão somente pata remove aquela linha em baixo de um link */
+    color: rgb(54,77,204);
+    font-weight: bold;
+}
+
+.link-list li a span {
+    display: block; /* sem esse recurso nao seria possível jogar o texto para baixo pois ele ficaria em linha */
+    color: grey;
+    margin-top: 10px;
+}
